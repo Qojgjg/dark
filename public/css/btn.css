@@ -1,0 +1,204 @@
+.btn{
+	border:2px solid transparent;
+	line-height:inherit;
+	z-index:1;
+	overflow:hidden;
+	border-radius:0;
+	background: yellow;
+	border:1px solid rgba(255,255,255,0.7);
+	letter-spacing:.5px;
+	font-family:"Montserrat", sans-serif;
+	display:inline-block;
+	line-height:26px;
+	text-transform:capitalize;
+	color: #121d33;
+	position:relative;
+	text-align:center;
+	font-weight: 700;
+	transition-duration:0.3s;
+	transition-timing-function:ease-in-out ;
+	padding: 13px;
+	font-size: 24px;
+}
+.btn:after{
+	content:"";
+	position:absolute;
+	top:0;
+	left:0;
+	width:500%;
+	height:1000%;
+	background:rgba(255,255,255,0.3);
+	 z-index:-1;
+	transform-origin:0% 0%;
+	transform:translateX(calc(20% - 20px)) translateY(10%) rotate(-45deg);
+	transition:transform 0.3s 
+}
+ .btn:hover:after{
+	 transform:translateY(10%) translateX(-20px) rotate(-45deg) 
+}
+ .btn i{
+	margin-left:6px;
+	vertical-align:middle;
+	position:relative;
+	top:-1px
+}
+ .btn:hover,.btn:active,.btn:focus{
+	background-color:#000 !important;
+	 color:#fff !important;
+	box-shadow:none !important;
+	border:none !important 
+}
+
+.banner-words-wrapper {
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+}
+.text-theme-color{
+	color: aqua
+}
+.banner-words-wrapper b {
+	font-weight: 700;
+	font-family: 'Montserrat',  sans-serif;
+}
+.banner-words-wrapper b {
+	display: inline-block;
+	position: absolute;
+	white-space: nowrap;
+	left: 0;
+	top: 0;
+	text-transform: uppercase;
+	font-size: 58px;
+}
+.banner-words-wrapper b.is-visible {
+	position: relative;
+}
+.banner-headline.clip b {
+	opacity: 0;
+}
+.banner-headline b.is-visible {
+	opacity: 1;
+}
+
+.banner-headline .banner-words-wrapper:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 2px;
+	height: 90%;
+	background-color: rgba(255, 255, 255, 0.65);
+}
+
+@media screen and (max-width: 767px) {
+	.banner-words-wrapper b {
+		font-size: 32px;
+	}
+}
+#particles-js{
+	position: absolute !important;
+	width: 100% !important;
+	height: 100% !important;
+	z-index: 2 !important;
+}
+
+label{
+	color: red;
+	font-size: 17px;
+	font-family: "Montserrat", sans-serif;
+}
+#link-p{
+	color: #121d33 !important;
+	font-size: 16px !important;
+	font-family: "Montserrat", sans-serif;
+}
+#link-phone{
+	color: #121d33 !important;
+	font-size: 16px !important;
+	font-family: "Montserrat", sans-serif;
+}
+#link-code{
+	color: #121d33 !important;
+	font-size: 16px !important;
+	font-family: "Montserrat", sans-serif;
+}
+#exampleInputEmail{
+	border-radius: 1px !important;
+	outline:0;
+	font-size: 20px !important;
+	box-shadow:0 0 0 .1rem rgba(0,123,255,.25);
+	text-align: center !important;
+}
+#exampleInputEmail:focus{
+	text-align: left !important;
+}
+#phoneInput, #code{
+	border-radius: 1px !important;
+	outline:0;
+	font-size: 20px !important;
+	box-shadow:0 0 0 .1rem rgba(0,123,255,.25)	
+}
+@media screen and (max-width: 821px){
+	.modal-dialog{
+		top: 15vh !important
+	}
+}
+.section-heading{
+	margin-bottom:0px;
+	text-align:center
+}
+.section-heading h4{
+	position:relative;
+	padding-bottom:5px;
+	font-weight:600;
+	margin-bottom:5px;
+	position:relative;
+	line-height:140%;
+	color: white;
+}
+.section-heading h4:after{
+	content:'';
+	display:block;
+	width:200px;
+	height:2px;
+	background:#49c0d0;
+	border-radius: 5px;
+	margin:0 auto;
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0 
+}
+#signUp, #signPhone, #signInWithPhone{
+	background: lime !important;
+	border: 1px solid limegreen !important;
+	font-size: 20px !important;
+	color: #121d33 !important;
+}
+#getCode{
+	background: lime !important;
+	border: 1px solid limegreen !important;
+	font-size: 20px !important;
+	color: #121d33 !important;
+}
+.bg-animate{
+	background-position:0 0;
+	background-repeat:repeat-x;
+	animation:animatedBackground 30s linear infinite
+}
+
+@keyframes animatedBackground{
+	from{
+		background-position:0 0
+	}
+	to{
+		background-position:100% 0
+	}
+}
+
+#the-form .next{
+	margin: 10px auto !important; 
+	text-align: center !important; 
+	list-style-type: none !important;
+}
